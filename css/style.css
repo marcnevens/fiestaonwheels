@@ -1,0 +1,236 @@
+* * * {
+    font-family: "Archivo", sans-serif;
+}
+/* General Styling */
+:root {
+    --primary-color: #476451;
+    --secondary-color: #EDAF03;
+    --base-color: #1E2B12;
+    --white-color: #fff;
+}
+/* Page Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--base-color);
+}
+
+
+/* Header styles */
+.navbar {
+    background-color: #B7063C;
+}
+.navbar-nav .nav-link {
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    color: black;
+    background-color: #D06686;
+}
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler-icon {
+    background-image: url('../Assets/icons/hamburger-menu-svgrepo-com 1hamburger-white.svg');
+}
+/* Footer Styling */
+footer {
+    background-color: #EDAF03   ;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust size as needed */
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80px; /* Reduce size on small screens */
+    }
+
+    .social-icons img {
+        width: 25px; /* Reduce icon size on small screens */
+    }
+}
+/* CSS for Menu Page Styling */
+.container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* CSS for Parallax Banner Styling */
+.full-width-banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    background-image: url('../Assets/img/Menu banner 1.webp'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* This creates the parallax effect */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Optional: add a fallback background color */
+    background-color: #333;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background for text readability */
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1; /* Ensures text is on top of the parallax background */
+}
+/* CSS for Food Menu Styling */
+.title-wrapper{
+    padding: 2rem;
+}
+.heading-title {
+    color: var(--white-color);
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.lede-text {
+    color: var(--white-color);
+}
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    background-color: #808D7C; 
+    border: 2px solid #C9DABF;
+    margin-bottom: 3rem;
+    border-radius: 12px; 
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+}
+.menu-wrapper:hover {
+    background-color: #5F6F65       ;
+}
+.menu-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
+.menu-lede {
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
+/* CSS for Find Us Styling */
+.stretch {
+    align-items: stretch;
+}
+.same-height {
+    flex-grow: 1;
+}
+#map {
+    height: 100%;
+    width: 100%;
+}
+.card {
+    background-color: #476451 !important;
+    border: none;
+    border-radius: 50 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    color: white;
+}
+.card:hover {
+    background-color: #5b8c6b !important;
+}
+.address-card {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.card-body {
+    padding: 8px; /* Reduced padding */
+}
+.card-title {
+    font-size: 1.75rem; /* Larger font size */
+    font-weight: 900;
+}
+.card-title, .card-text {
+    margin-bottom: 4px; /* Reduced margin between title and paragraphs */
+}
+.location-place, .location-media {
+    display: none; /* Hide the location place */
+}
+.card-column {
+    overflow-y: auto;
+}
+.map-column {
+    height: auto; /* Set a consistent height for the map */
+}
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.equal-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+@media (max-width: 768px) {
+    /* For mobile devices */
+    .card-column {
+        order: 2; /* Ensure cards appear below the map */
+        padding-top: 10px; /* Add top padding to separate from map */
+    }
+    .map-column {
+        order: 1;
+        height: 300px; /* Adjust map height for mobile */
+        margin-bottom: 10px; /* Add bottom margin to separate from cards */
+    }
+    .row.equal-height {
+        flex-direction: column; /* Ensure stacking on smaller devices */
+    }
+}

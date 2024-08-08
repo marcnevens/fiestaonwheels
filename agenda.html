@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact_us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./agenda_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #navbarNav {
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="../Assets-duygu/Fiesta logo.png"
+              alt="Logo"
+              style="width: 50px"
+            />
+            <!-- Replace 'logo.png' with your logo -->
+          </a>
+          <!-- Toggler for mobile view -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./agenda.html">Agenda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./public/find-us.html">Find Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./public/menu.html">Our Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact_us.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="agenda">
+        <div class="button-container-calendar">
+          <button id="previous" onclick="previous()">‹</button>
+          <h3 id="monthAndYear"></h3>
+          <button id="next" onclick="next()">›</button>
+        </div>
+        <div class="container-table">
+          <table class="table-calendar" id="calendar" data-lang="en">
+            <thead id="thead-month"></thead>
+            <!-- Table body for displaying the calendar -->
+            <tbody id="calendar-body"></tbody>
+          </table>
+        </div>
+
+        <div class="footer-container-calendar">
+          <label for="month">Jump To: </label>
+          <!-- Dropdowns to select a specific month and year -->
+          <select id="month" onchange="jump()">
+            <option value="0">Jan</option>
+            <option value="1">Feb</option>
+            <option value="2">Mar</option>
+            <option value="3">Apr</option>
+            <option value="4">May</option>
+            <option value="5">Jun</option>
+            <option value="6">Jul</option>
+            <option value="7">Aug</option>
+            <option value="8">Sep</option>
+            <option value="9">Oct</option>
+            <option value="10">Nov</option>
+            <option value="11">Dec</option>
+          </select>
+          <!-- Dropdown to select a specific year -->
+          <select id="year" onchange="jump()"></select>
+        </div>
+      </div>
+      <div class="mainContent">
+        <!-- <img src="./Assets/Fiesta logo.png" alt="logo van Fiesta on wheels" /> -->
+        <h3 id="booking-title">Book our truck for your Perfect Party!</h3>
+        <p class="booking">
+          Please select a date, fill in your details and tell us about your
+          party! We will contact you with the details as soon as possible.
+        </p>
+        <form action="" method="post">
+          <p>* indicates a required field</p>
+          <label for="name" id="name">Name*</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Please enter your Name"
+            required
+            autocomplete="additional-name"
+          />
+          <label for="date" id="date">Date*</label>
+          <input type="date" name="date" required />
+          <label for="email" id="email">Email*</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Please enter a valid Email Address"
+            required
+            autocomplete="email"
+          />
+          <label for="message" id="message">Message</label>
+          <textarea
+            name="message"
+            placeholder="Please enter your message"
+            rows="3"
+          ></textarea>
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+      </div>
+      <div class="emptySpace"></div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <img src="../Assets-duygu/Fiesta logo.png" alt="Logo" class="logo" />
+        <div class="social-icons">
+          <a href="https://twitter.com" target="_blank">
+            <img src="../Assets-duygu/Icontwitter.svg" alt="Twitter" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="../Assets-duygu/Iconinstagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://youtube.com" target="_blank">
+            <img src="../Assets-duygu/Iconyoutube.svg" alt="You Tube" />
+          </a>
+        </div>
+        <p id="copyright">
+          Copyirght © 2024 Fiesta on Wheels. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- Load Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGaFEL/ap6LJAc/yj+IIyBiK9K"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIyAqVGM/EHCFe/JJQG2Gft7HCWrTt8miZ6jzY"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./agenda_script.js"></script>
+  </body>
+</html>

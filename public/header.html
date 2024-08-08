@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <title>Header</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        /* Additional Styles for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #007BFF;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:focus {
+            outline: 2px solid #007BFF;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+        }
+        /* Header styles */
+        .navbar {
+    background-color: #B7063C;
+        }
+        .navbar-nav .nav-link {
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+        }
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    color: black;
+    background-color: #D06686;
+        }
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Include Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="../Assets/Fiesta logo.png" alt="Logo" style="height: 60px;">
+                </a>
+
+                <!-- Navbar toggler button for mobile view -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation items -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../public/find-us.html">Find Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../public/menu.html">Our Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="agenda.html">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Load Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="../JS/script.js"></script>
+</body>
+</html>

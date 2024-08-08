@@ -1,0 +1,298 @@
+/* Header styles */
+.navbar-custom {
+  background-color: #b7063c;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: black;
+  background-color: #d06686;
+  border-radius: 5px;
+}
+.navbar-toggler {
+  /* border-color: rgb(255, 255, 255); */
+}
+.navbar-toggler-icon {
+  background-image: url("../Assets-duygu/hamburger-menu-svgrepo-com\ 1hamburger-white.svg");
+}
+/* Footer Styling */
+footer {
+  background-color: #edaf03;
+  color: #000;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust size as needed */
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* main {
+    margin: 160px 24px;
+  } */
+
+/* .emptySpace {
+      margin-bottom: 200px;
+    } */
+
+/* css of main page     */
+
+* {
+  font-family: "Archivo", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #053014;
+  padding-bottom: 10%;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  border: 1px solid white;
+  border-radius: 12px;
+  min-width: 240px;
+  padding: 20px;
+  width: 60%;
+  height: auto;
+  margin: 32px auto;
+}
+
+#booking-title,
+.booking {
+  color: white;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#booking-title {
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+p {
+  font-size: 16px;
+}
+
+form p {
+  background-color: #eeaf00;
+  padding-bottom: 5px;
+}
+
+main img {
+  width: 116px;
+  height: auto;
+}
+
+form,
+input,
+label,
+textarea {
+  background-color: #eeaf00;
+}
+
+#date,
+#email,
+#message,
+#name {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#submit {
+  background-color: #b7063c;
+  margin-top: 20px;
+  border: none;
+  color: white;
+}
+
+#submit:hover {
+  border: 2px solid #b7063c;
+  background-color: #eeaf00;
+  color: black;
+  box-shadow: 0 0 10px #b7063c;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.agenda h2 {
+  text-align: center;
+}
+
+.agenda table,
+.agenda td,
+.agenda th,
+.agenda span,
+.agenda div,
+.agenda strong,
+.agenda p {
+  background-color: #eeaf00;
+  /* border: 1px solid black;
+    border-collapse: collapse; */
+}
+
+.agenda td,
+.agenda th {
+  padding: 20px;
+}
+
+.agenda td:hover {
+  background-color: #b7063c;
+  color: white;
+  span,
+  strong,
+  p {
+    background-color: #b7063c;
+  }
+  /* border-radius: 50%; */
+}
+
+/* .agenda td:hover {
+    color: #b7063c;
+    border: 1px solid #b7063c;
+  } */
+
+#calendar {
+  width: 100%;
+  /* padding: 20px; */
+  min-width: 240px;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.container-table {
+  width: 60%;
+  padding: 20px;
+  background-color: #eeaf00;
+}
+
+.agenda {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./Assets_Robin/foodAndDrinks.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-position: center; */
+  background-attachment: local;
+  width: 100%;
+  min-height: 1200px;
+}
+
+#monthAndYear {
+  background-color: #eeaf00;
+  font-size: 28px;
+  justify-content: center;
+}
+
+#next,
+#previous {
+  background-color: #eeaf00;
+  border: 2px solid black;
+  border-radius: 6px;
+  width: 15%;
+}
+
+.button-container-calendar {
+  width: 60%;
+  background-color: #eeaf00;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px 6px 0px 0px;
+  min-width: 200px;
+  padding: 20px 20px 0px;
+}
+
+#month,
+#month option,
+#year,
+#year option {
+  background-color: #eeaf00;
+}
+
+.footer-container-calendar {
+  width: 60%;
+  background-color: #eeaf00;
+  border-radius: 0px 0px 6px 6px;
+  min-width: 200px;
+  padding: 0px 20px 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  .agenda {
+    min-height: 900px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .agenda {
+    min-height: 600px;
+  }
+  .agenda strong {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .agenda {
+    min-height: 350px;
+  }
+  .agenda strong {
+    font-size: 9px;
+  }
+}

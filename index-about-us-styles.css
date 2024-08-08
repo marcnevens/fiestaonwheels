@@ -1,0 +1,449 @@
+.navbar-custom {
+    background-color: #B7063C;
+}
+.navbar-custom .navbar-brand, 
+.navbar-custom .nav-link {
+    color: white;
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: black;
+    background-color: #D06686;
+    border-radius: 5px;
+}
+.navbar-toggler {
+    /* border-color: rgb(255, 255, 255); */
+}
+.navbar-toggler-icon {
+    background-image: url("../Assets-duygu/hamburger-menu-svgrepo-com\ 1hamburger-white.svg");
+}
+
+* {
+    font-family: "Archivo", sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #EEAF00;
+}
+
+.banner-container {
+    position: relative;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.banner-logo {
+    position: absolute;
+    top: 20%;
+    left: 9%; 
+    width: 30%; 
+    height: auto; 
+}
+
+.banner-logo:hover {
+    transform: scale(1.05); 
+    z-index: 10; 
+}
+
+
+.banner-button {
+    position: absolute;
+    top: 85%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: #053014;
+    background-color: #EEAF00;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.banner-button:hover {
+    background-color: #B7063C;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7); 
+}
+
+
+h1 {
+    position: absolute;
+    color: white;
+    top: 10%; 
+    left: 10%; 
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+}
+
+#button-menu {
+    padding: 5% 10%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.square {
+    padding: 3%;
+    background-color: #B7063C;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    width: 100%; 
+    max-width: 300px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.333% - 10%); 
+    max-width: 300px;
+    box-sizing: border-box;
+    
+}
+
+.box h2 {
+    width: 100%; 
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+
+.square:hover {
+    background-color: #053014;
+    cursor: pointer;
+}
+
+.carousel {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    padding-top:5%;
+    margin-bottom: 5%;
+    background-color: #053014;
+    
+}
+
+.red-border {
+    border: #B7063C solid 12px;
+}
+
+.carousel {
+    border-radius: 15px;
+}
+
+/* About us */
+
+.jar {
+    display: flex;
+    gap: 10%;
+    margin: 10%;
+}
+
+.side {
+    width: 50%;
+}
+
+.side>p, .about-us>p {
+    font-size: larger;
+    padding-top: 5%;
+    justify-content: center;
+    text-align: justify;
+}
+
+.taco-truck, .chef-photo {
+    width: 100%;
+    border: #B7063C solid 10px;
+    border-radius: 20px;
+}
+
+.reviews {
+    background-color: #053014;
+    padding: 5% 10%;
+    margin-top: 0;
+    
+}
+
+.review-box {
+    max-width: 70%;
+    
+}
+
+.reviews h3 {
+    color: white;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+}
+
+.reviews h6 {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.reviews p {
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #ffffff;
+    margin: 1% 1%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-header h6 {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.review-stars {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .square {
+        max-width: 250px;
+    }
+
+    .box {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1024px) {
+    .square {
+        max-width: 200px;
+    }
+
+    .box {
+        max-width: 200px;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .banner-button {
+        position: absolute;
+        top: 85%;
+        left: 24%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        color: #053014;
+        background-color: #EEAF00;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 769px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .square {
+        max-width: 250px;
+    }
+
+    .box {
+        max-width: 250px;
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    .banner-button {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        color: #053014;
+        background-color: #EEAF00;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 10px;
+    }
+
+    .jar {
+        flex-direction: column;
+    }
+
+    .side {
+        width: 100%;
+    }
+
+    .our-chef .left {
+        order: 2;
+    }
+    .our-chef .right {
+        order: 1;
+    }
+
+    .side img {
+        margin-bottom: 5%;
+    }
+
+    .reviews {
+        background-color: #053014;
+        padding: 10%;
+        margin-top: 0;
+    }
+    
+    .review-box {
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width: 599px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .square {
+        max-width: 200px;
+    }
+
+    .box {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    .banner-button {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        color: #053014;
+        background-color: #EEAF00;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 10px;
+    }
+
+    .jar {
+        flex-direction: column;
+    }
+
+    .side {
+        width: 100%;
+    }
+
+    .our-chef .left {
+        order: 2;
+    }
+    .our-chef .right {
+        order: 1;
+    }
+
+    .side img {
+        margin-bottom: 5%;
+    }
+
+    .reviews {
+        background-color: #053014;
+        padding: 10%;
+        margin-top: 0;
+    }
+    
+    .review-box {
+        max-width: 100%;
+    }
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust size as needed */
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+}

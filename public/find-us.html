@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Find Us</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Style the info window content */
+        .info-window-content {
+            display: flex;
+            flex-direction: row;
+            font-family: Lato, sans-serif;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.6;
+            max-width: 250px;
+        }
+        .info-window-body {
+            display: flex;
+            flex-direction: column;
+            padding-right: 8px;
+            justify-content: center;
+        }
+    
+        .info-window-content h5 {
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #007BFF;
+        }
+    
+        .info-window-content p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+    
+        .info-window-content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 8px;
+        }
+    
+        .info-window-content a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    
+        .info-window-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional Styles for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #007BFF;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:focus {
+            outline: 2px solid #007BFF;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+        }
+        .navbar-toggler-icon {
+            background-image: url("../Assets-duygu/hamburger-menu-svgrepo-com\ 1hamburger-white.svg");
+            padding: .25rem .75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+         background-color: transparent;
+            border: 1px solid transparent;
+            border-color: rgba(255, 255, 255, 0.5);
+            border-radius: .25rem;
+        }
+
+        main {
+            padding-bottom: 10%;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Include Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="./index.html">
+                    <img src="../Assets-duygu/Fiesta logo.png" alt="Logo" style="width: 50px;"> <!-- Replace 'logo.png' with your logo -->
+                </a>
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../agenda.html">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../public/find-us.html">Find Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../public/menu.html">Our Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact_us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container mt-4">
+            <!-- Title and Description -->
+            <div class="text-center mb-4">
+                <h1 style="color: white;">Explore Locations</h1>
+                <p style="color: white;">Click on any location below to view it on the map.</p>
+            </div>
+            <div class="row stretch">
+                <div class="col-md-4 col-12 card-column mb-3 mb-md-0 same-height">
+                    <div class="card address-card" tabindex="0" role="button" aria-label="View location: Leuven" data-lat="50.879202" data-lng="4.7011675">
+                        <div class="card-body">
+                            <h5 class="card-title">Leuven</h5>
+                            <p class="card-text">Maandag</p>
+                            <p class="card-text">08.00 - 13.00</p>
+                            <p class="card-text location-place">Maandagsmarkt</p>
+                            <figure class="location-media"><img src="../Assets/img/Leuven.webp" alt="Leuven" width="50px"></figure>
+                            <p class="card-text">Click to see location on the map.</p>
+                        </div>
+                    </div>
+                    <div class="card address-card" tabindex="0" role="button" aria-label="View location: Kortenberg" data-lat="50.895358099999996" data-lng="4.565683393303372">
+                        <div class="card-body">
+                            <h5 class="card-title">Kortenberg</h5>
+                            <p class="card-text">Maandag</p>
+                            <p class="card-text">08.00 - 13.00</p>
+                            <p class="card-text location-place">Dorpsplein</p>
+                            <figure class="location-media"><img src="../Assets/img/Kortenberg.webp" alt="Kortenberg" width="50px"></figure>
+                            <p class="card-text">Click to see location on the map.</p>
+                        </div>
+                    </div>
+                    <div class="card address-card" tabindex="0" role="button" aria-label="View location: Aarschot" data-lat="50.9842743" data-lng="4.836429">
+                        <div class="card-body">
+                            <h5 class="card-title">Aarschot</h5>
+                            <p class="card-text">Maandag</p>
+                            <p class="card-text">08.00 - 13.00</p>
+                            <p class="card-text location-place">Vogelmarkt</p>
+                            <figure class="location-media"><img src="../Assets/img/Aarschot.webp" alt="Aarschot" width="50px"></figure>
+                            <p class="card-text">Click to see location on the map.</p>
+                        </div>
+                    </div>
+                    <div class="card address-card" tabindex="0" role="button" aria-label="View location: Vilvoorde" data-lat="50.928711" data-lng="4.423126">
+                        <div class="card-body">
+                            <h5 class="card-title">Vilvoorde</h5>
+                            <p class="card-text">Maandag</p>
+                            <p class="card-text">08.00 - 13.00</p>
+                            <p class="card-text location-place">Marktplaats</p>
+                            <figure class="location-media"><img src="../Assets/img/Vilvoorde.webp" alt="Vilvoorde" width="50px"></figure>
+                            <p class="card-text">Click to see location on the map.</p>
+                        </div>
+                    </div>
+                    <div class="card address-card" tabindex="0" role="button" aria-label="View location: Zemst" data-lat="50.9842166" data-lng="4.4650814">
+                        <div class="card-body">
+                            <h5 class="card-title">Zemst</h5>
+                            <p class="card-text">Maandag</p>
+                            <p class="card-text">08.00 - 13.00</p>
+                            <p class="card-text location-place">Vlooienmarkt</p>
+                            <figure class="location-media"><img src="../Assets/img/Zemst.webp" alt="Zemst" width="50px"></figure>
+                            <p class="card-text">Click to see location on the map.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-12 map-column">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End of Main Content -->
+    <!-- Include Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="../Assets/Fiesta logo.png" alt="Logo" class="logo">
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank">
+                    <img src="../Assets/icons/Icontwitter.svg" alt="Twitter">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="../Assets/icons/Iconinstagram.svg" alt="Instagram">
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="../Assets/icons/Iconyoutube.svg" alt="YouTube">
+                </a>
+            </div>
+            <p id="copyright">Copyright © 2024 Fiesta on Wheels. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- Load Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Load Google Maps JavaScript API Asynchronously -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbn0aZymUOfAGZm73Bg93fInz8Xf_KQFs&callback=initMap"></script>
+    <!-- Optional JavaScript -->
+    <script src="../JS/script.js"></script>
+    <!-- Custom Script for Google Maps -->
+<script>
+    let map;
+    let marker;
+    let infoWindow;
+
+    function initMap() {
+        // Initialize map centered at a default location
+        const defaultLocation = { lat: 50.879202, lng: 4.7011675 };
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: defaultLocation,
+            zoom: 18,
+        });
+
+        // Add a marker at the default location
+        marker = new google.maps.Marker({
+            position: defaultLocation,
+            map: map,
+        });
+
+        // Initialize the info window
+        infoWindow = new google.maps.InfoWindow();
+
+        // Add event listeners to address cards
+        document.querySelectorAll('.address-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const lat = parseFloat(this.getAttribute('data-lat'));
+                const lng = parseFloat(this.getAttribute('data-lng'));
+                const position = { lat: lat, lng: lng };
+
+                // Move the map to the clicked location
+                map.panTo(position);
+
+                // Update the marker position
+                marker.setPosition(position);
+
+                // Build content for info window
+                const title = this.querySelector('.card-title').textContent;
+                const place = this.querySelector('.location-place') ? this.querySelector('.location-place').textContent : '';
+                const media = this.querySelector('.location-media') ? this.querySelector('.location-media').innerHTML : '';
+
+                // Set the content of the info window with styling
+                const content = `
+                    <div class="info-window-content">
+                        <div class="info-window-body">
+                            <h5>${title}</h5>
+                            <p>${place}</p>
+                        </div>
+                        ${media}
+                    </div>
+                `;
+
+                infoWindow.setContent(content);
+                infoWindow.open(map, marker);
+            });
+        });
+    }
+</script>
+</body>
+</html>

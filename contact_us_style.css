@@ -1,0 +1,199 @@
+/* Header styles */
+.navbar-custom {
+  background-color: #b7063c;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: black;
+  background-color: #d06686;
+  border-radius: 5px;
+}
+.navbar-toggler {
+  /* border-color: rgb(255, 255, 255); */
+}
+.navbar-toggler-icon {
+  background-image: url("../Assets-duygu/hamburger-menu-svgrepo-com\ 1hamburger-white.svg");
+}
+/* Footer Styling */
+footer {
+  background-color: #edaf03;
+  color: #000;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust size as needed */
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* css of main page */
+
+* {
+  font-family: "Archivo", sans-serif;
+}
+
+main {
+  margin: 160px 24px;
+  background-color: #053014;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10%;
+}
+
+/* .emptySpace {
+  margin-bottom: 200px;
+} */
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  border: 1px solid white;
+  border-radius: 12px;
+  min-width: 320px;
+  padding: 20px;
+  width: 60%;
+  height: auto;
+  margin: 32px auto;
+}
+
+h1,
+h3 {
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+
+#phonenumber {
+  font-size: 32px;
+  color: white;
+}
+
+main img {
+  width: 116px;
+  height: auto;
+}
+
+form,
+input,
+label,
+textarea {
+  background-color: #eeaf00;
+}
+
+form p {
+  background-color: #eeaf00;
+}
+
+#firstName,
+#email,
+#message,
+#lastName {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#submit {
+  color: white;
+  background-color: #b7063c;
+  margin-top: 20px;
+  border: none;
+}
+
+#submit:hover {
+  border: 2px solid #b7063c;
+  background-color: #eeaf00;
+  color: black;
+  box-shadow: 0 0 10px #b7063c;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  h1 {
+    font-size: 1.8rem;
+   }
+   h3, a {
+    font-size: 1.4rem;
+   }
+}
+
+@media (min-width: 770px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.7rem;
+   }
+   h3, a {
+    font-size: 1.3rem;
+   }
+}
+
+@media (min-width: 600px) and (max-width: 769px) {
+  h1 {
+    font-size: 1.6rem;
+   }
+   h3, a {
+    font-size: 1.2rem;
+   }
+}
+
+@media (max-width: 599px) {
+  h1 {
+    font-size: 1.5rem;
+   }
+   h3, a {
+    font-size: 1rem;
+   }
+}
